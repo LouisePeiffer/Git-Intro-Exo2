@@ -1,0 +1,94 @@
+body
+    margin:0
+
+// Header
+
+.mauve 
+    background-color: purple
+    padding: 5px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    img
+        height: 50px
+        width: auto
+        position: absolute
+        top: 0px
+        left: 10px
+    label 
+        color: white
+    input 
+        padding: 10px
+        border: 0
+        border: radius 10px
+    button 
+        background-color: lime
+        border: 0
+        border-radius: 5px
+        color: white
+        padding: 10px
+        text-transform: uppercase
+
+//Header nav
+nav 
+    display: flex
+    align-items: center
+    border-bottom: 1px solid lightgray
+
+    .nav-logo 
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center
+        img 
+            width: 150px
+            height: auto
+    
+    .navigation
+        flex: 4
+        padding: 50px 20px
+        border-left: 1px solid lightgray
+        border-right: 1px solid lightgray
+        ul 
+            padding: 0
+            display: flex
+            justify-content: space-around
+            li 
+                list-style: none
+                text-transform: uppercase  
+                a 
+                    text-decoration: none
+                    font-weight: bold
+                    color: black
+                    max-width: max-content
+                    position: relative
+                    &:before
+                        content: ""
+                        position: absolute
+                        bottom: 0
+                        background-color: black
+                        height: 2px
+                        transition: 1s
+                        width: 100%
+                        transform: scaleX(0)
+                    &:hover
+                        &:before
+                            transform: scaleX(1)
+
+    .coworking 
+        flex: 1
+        display: flex
+        justify-content: center
+        align-items: center     
+
+// Section
+
+section 
+    margin: 50px 15%
+    h1 
+        font-size: 50px
+        text-align: center
+        padding-bottom: 35px
+        position: relative
+        
