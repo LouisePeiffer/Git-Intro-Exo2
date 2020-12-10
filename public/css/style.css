@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .mauve {
@@ -99,6 +100,100 @@ section h1 {
   text-align: center;
   padding-bottom: 35px;
   position: relative;
+}
+section h1:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 40px);
+  height: 3px;
+  width: 80px;
+  background-color: purple;
+}
+
+ul li {
+  margin: 8px 0;
+}
+ul li:marker {
+  color: purple;
+}
+
+section h2 {
+  font-size: 35px;
+}
+
+footer {
+  background-color: black;
+}
+footer .reseaux {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+footer .reseaux ul {
+  display: flex;
+}
+footer .reseaux ul li {
+  list-style: none;
+  margin: 0 18px;
+  padding: 50px 0;
+}
+footer .reseaux ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: darkgray;
+}
+footer .reseaux {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+}
+footer .reseaux ul {
+  display: flex;
+}
+footer .reseaux ul li {
+  list-style: none;
+  margin: 0 18px;
+  padding: 50px 0;
+}
+footer .reseaux ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .reseaux ul li a i {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  margin-right: 10px;
+}
+footer .copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .copy img {
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 50px;
+}
+footer .copy p {
+  padding: 30px;
+  font-size: 10px;
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 body
     margin:0
+    font-family: 'Ubuntu', sans-serif
 
 // Header
 
@@ -91,4 +92,81 @@ section
         text-align: center
         padding-bottom: 35px
         position: relative
-        
+        &:before
+            content: ""
+            position: absolute
+            bottom: 0
+            left: calc(50% - 40px)
+            height: 3px 
+            width: 80px
+            background-color: purple
+
+ul 
+    li
+        margin: 8px 0
+        &:marker
+            color: purple
+
+section
+    h2
+        font-size: 35px
+
+footer 
+    background-color: black
+    .reseaux
+        display: flex
+        justify-content: center
+        border-bottom: 1px solid gray
+        ul
+            display: flex
+            li
+                list-style: none
+                margin: 0 18px
+                padding: 50px 0
+                a
+                    color: white
+                    text-decoration: none
+                    text-transform: uppercase
+                    font-size: 15px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+footer
+    background-color: darkgray
+    .reseaux
+        display: flex
+        justify-content: center
+        border-bottom: 1px solid gray
+        ul
+            display: flex
+            li
+                list-style: none
+                margin: 0 18px
+                padding: 50px 0
+                a 
+                    color: white
+                    text-decoration: none
+                    text-transform: uppercase
+                    font-size: 15px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    i
+                        border-radius: 50%
+                        border: 2px solid white
+                        padding: 10px
+                        margin-right: 10px
+    .copy
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        img
+            height: 80px
+            margin-bottom: 10px
+            padding: 50px
+        p
+            padding: 30px
+            font-size: 10px
+            color: gray
